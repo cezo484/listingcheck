@@ -1,0 +1,27 @@
+--- segment 01 ---
+ListingCheck. Before an exchange lists a token, it needs evidence, not hype. This is a testnet prototype that buys listing intelligence and turns it into a risk memo.
+
+--- segment 02 ---
+Fake listing announcements and scam tokens are everywhere. A token can look real: a website, a social account, trading volume. But behind it there may be a backdoored contract, a sanctioned wallet, or wash trading that fakes demand. Listing teams need to check all of that before they list, and doing it by hand is slow.
+
+--- segment 03 ---
+ListingCheck takes one input: a token address. It sends five requests through Telegraph, in parallel, each paid in testnet USDC with x402. A contract audit. An on-chain metric check. A sanctions screen against OFAC, EU, and UN lists. A wash trading check. And a social bot check on the project account. Independent miners answer each request, and every answer comes back with a receipt.
+
+--- segment 04 ---
+Here is a demo run. The command is npm run demo. It uses fixture answers, so it is free and runs offline. All five checks come back clear: no audit issue, the on-chain balance reads back, no sanctions match, no wash trading, and the social account looks human. The verdict is list.
+
+--- segment 05 ---
+On the live testnet, the same run took about thirty-four seconds on the nineteenth of November, with real miners answering. The verdict there was review, not list, because one answer could not be read clearly. An unreadable answer never becomes a pass.
+
+--- segment 06 ---
+Observed cost: five checks at one cent each, five cents of testnet USDC for a full memo. Spending is capped: two cents per call, one dollar per run, eight requests maximum. If a quote comes in above the cap, the app refuses to pay. Nothing is spent without a live quote.
+
+--- segment 07 ---
+The result is the memo. A verdict: list, review, or do not list. Every line names its evidence: the miner, the intent, the cost, the latency, and the answer, word for word. A sanctions match, a critical audit finding, or wash trading above half the volume blocks the listing. A human reviewer still signs off.
+
+--- segment 08 ---
+To try it, clone the repo, run npm install, then npm run demo. It is free, and it needs no wallet and no funds. For a real testnet run, fund a fresh Sepolia wallet with test USDC from the Circle faucet, and run the check command. The test suite passes, sixty-five out of sixty-five.
+
+--- segment 09 ---
+ListingCheck. A testnet prototype for the Telegraph Hackathon, Season Two, Mission Zero One. It is not a listing decision, and not financial advice.
+
