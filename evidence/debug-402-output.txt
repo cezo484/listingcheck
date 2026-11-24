@@ -1,0 +1,78 @@
+wallet: 0x5fe684c303a4aA9d53f02f29Aa800f72C02A0DcA
+
+[A1] quote status: 402
+[A1] x402Version: 2
+[A1] accepts: exact eip155:11155111 0xcc194e1a843B658526D0D5C431f670028582Ae17 amount=10000 | exact eip155:84532 0x036CbD53842c5426634e7929541eC2318f3dCF7e amount=10000 | exact solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1 4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU amount=10000 | escrow eip155:11155111 - amount=10000
+[A1] quotedAccept (Base Sepolia): {
+  amount: '10000',
+  network: 'eip155:84532',
+  asset: '0x036CbD53842c5426634e7929541eC2318f3dCF7e',
+  payTo: '0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e'
+}
+
+[A2] payload x402Version: 2
+[A2] accepted: exact eip155:84532 0x036CbD53842c5426634e7929541eC2318f3dCF7e amount 10000 payTo 0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e
+[A2] authorization: {"from":"0x5fe684c303a4aA9d53f02f29Aa800f72C02A0DcA","to":"0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e","value":"10000","validAfter":"0","validBefore":"1795104543","nonce":"0x22f1130a286d8041fef27209e46ca0f12efa7dca8ab886ed153e5ae2ced1decb"}
+
+[A3] recovered signer: 0x5fe684c303a4aA9d53f02f29Aa800f72C02A0DcA == wallet OK
+[A4] eth_call transferWithAuthorization: SUCCESS (contract would accept this authorization)
+
+[B] wrapper paid-request status: 402
+[B] response headers payment-response: null
+[B] response headers x-payment-response: null
+[B] response headers x-telegraph-receipt: null
+[B] body (first 600 chars): {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "payTo": "G53EbeTZSNsAn7bj6iMFUQnq3zpDdEbHhKkPRywo8bix"
+    },
+    {
+      "extra": {
+        "description": "Charged 
+
+[C] retrying same payload with X-PAYMENT header...
+[C] X-PAYMENT retry status: 402
+[C] x-payment-response: null
+[C] payment-response: null
+[C] body (first 600 chars): {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "payTo": "G53EbeTZSNsAn7bj6iMFUQnq3zpDdEbHhKkPRywo8bix"
+    },
+    {
+      "extra": {
+        "description": "Charged 
+
+Done.

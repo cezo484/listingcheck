@@ -1,0 +1,59 @@
+[
+  {
+    "at": "2026-11-19T17:29:23.764Z",
+    "check": "audit",
+    "intent": "SMART_CONTRACT_AUDIT_GENERAL",
+    "query": "Audit the smart contract at address 0x833589fCD6eDb6E08f4c7C32D4f71B54bda02913 on base for reentrancy, access control, and integer overflow risks. Report each finding with severity, or state clearly that no issue was found.",
+    "route": "engine",
+    "status": "failed",
+    "error": "HTTP 402 {\n  \"error\": \"payment required\",\n  \"accepts\": [\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:11155111\",\n      \"payTo\": \"0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b\"\n    },\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:84532"
+  },
+  {
+    "at": "2026-11-19T17:29:23.764Z",
+    "check": "onchain",
+    "intent": "ONCHAIN_METRIC_VERIFY_GENERAL",
+    "query": "What is the native-coin balance, in Gwei, of address 0x833589fCD6eDb6E08f4c7C32D4f71B54bda02913 on ethereum at block 26450626?",
+    "route": "engine",
+    "paymentRail": "escrow",
+    "minerId": "4433",
+    "minerName": "LiveCert — Sourced Answers for Agents",
+    "minerRank": null,
+    "minerScore": null,
+    "amountUsdc": 0.01,
+    "network": "eip155:11155111",
+    "chainId": 11155111,
+    "usdcContract": "0xcc194e1a843B658526D0D5C431f670028582Ae17",
+    "txHash": "",
+    "txUrl": "",
+    "receiptHash": "",
+    "signalHash": "0x93f7170c70612d04813175f05bb0ffbc1694dea01c831b23ae9bdb71c5eaad06",
+    "latencyMs": 25877
+  },
+  {
+    "at": "2026-11-19T17:29:23.765Z",
+    "check": "sanctions",
+    "intent": "SANCTIONS_SCREENING_MATCH_GENERAL",
+    "query": "Screen the entity named 0x833589fCD6eDb6E08f4c7C32D4f71B54bda02913 against the OFAC SDN, OFAC non-SDN consolidated, UN Security Council, and EU consolidated financial sanctions lists. Report whether it matches any list, and name the list for each match.",
+    "route": "engine",
+    "status": "failed",
+    "error": "HTTP 402 {\n  \"error\": \"payment required\",\n  \"accepts\": [\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:11155111\",\n      \"payTo\": \"0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b\"\n    },\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:84532"
+  },
+  {
+    "at": "2026-11-19T17:29:23.765Z",
+    "check": "wash",
+    "intent": "WASH_TRADING_DETECTION_GENERAL",
+    "query": "Is trading volume on token 0x833589fCD6eDb6E08f4c7C32D4f71B54bda02913 on base wash traded? Check for circular transfers between affiliated wallets and report the share of volume that looks artificial.",
+    "route": "engine",
+    "status": "failed",
+    "error": "HTTP 402 {\n  \"error\": \"payment required\",\n  \"accepts\": [\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:11155111\",\n      \"payTo\": \"0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b\"\n    },\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:84532"
+  },
+  {
+    "at": "2026-11-19T17:29:23.765Z",
+    "check": "social",
+    "intent": "SOCIAL_BOT_DETECTION_GENERAL",
+    "query": "Is @circle a bot? Check posting cadence, follower-graph clustering, and coordination with other accounts, and report a verdict with the signals behind it.",
+    "route": "engine",
+    "status": "failed",
+    "error": "HTTP 402 {\n  \"error\": \"payment required\",\n  \"accepts\": [\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:11155111\",\n      \"payTo\": \"0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b\"\n    },\n    {\n      \"scheme\": \"exact\",\n      \"price\": \"$0.01\",\n      \"network\": \"eip155:84532"
+  }
+]

@@ -1,0 +1,265 @@
+wallet: 0x5fe684c303a4aA9d53f02f29Aa800f72C02A0DcA
+
+[A0] USDC balance: 100.00 | ETH balance: 0.05000
+
+[A1] quote status: 402
+[A1] x402Version: 2
+[A1] FULL payment-required JSON:
+{
+  "accepts": [
+    {
+      "amount": "10000",
+      "asset": "0xcc194e1a843B658526D0D5C431f670028582Ae17",
+      "extra": {
+        "name": "USD Coin",
+        "version": "2"
+      },
+      "maxTimeoutSeconds": 60,
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b",
+      "scheme": "exact"
+    },
+    {
+      "amount": "10000",
+      "asset": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+      "extra": {
+        "name": "USDC",
+        "version": "2"
+      },
+      "maxTimeoutSeconds": 60,
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e",
+      "scheme": "exact"
+    },
+    {
+      "amount": "10000",
+      "asset": "4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
+      "extra": {
+        "feePayer": "C7ckEzH4varMpBQsaD9bJZSCnWVyk4zAKYA85spuuNbR"
+      },
+      "maxTimeoutSeconds": 60,
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "payTo": "G53EbeTZSNsAn7bj6iMFUQnq3zpDdEbHhKkPRywo8bix",
+      "scheme": "exact"
+    },
+    {
+      "amount": "10000",
+      "extra": {
+        "description": "Charged to the caller's Telegraph escrow balance in the next ledger block. Fund it once with LedgerFacet.depositUSDC(amount); no per-request settlement.",
+        "message": "Telegraph Escrow Payment\n\nWallet: {from}\nPay To: 0x72a70e949362670bf8bcead24efc5b8f950aa08b\nNetwork: eip155:11155111\nAmount: 10000 uUSDC\nResource: /v1/ask\nNonce: {nonce}\nValid After: {validAfter}\nValid Before: {validBefore}",
+        "resource": "/v1/ask",
+        "signWith": "personal_sign (EIP-191)"
+      },
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670bf8bcead24efc5b8f950aa08b",
+      "scheme": "escrow"
+    }
+  ],
+  "error": "Payment required",
+  "resource": {
+    "description": "Payment required for LLM-routed inference.",
+    "mimeType": "application/json",
+    "url": "https://devnode.telegraphprotocol.com/engine/v1/ask"
+  },
+  "x402Version": 2
+}
+[A1] quotedAccept (Eth Sepolia): {
+  amount: '10000',
+  network: 'eip155:11155111',
+  asset: '0xcc194e1a843B658526D0D5C431f670028582Ae17',
+  payTo: '0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b'
+}
+
+[A1b] on-chain name: "USD Coin" | version: "(no version())" | decimals: 6
+[A1b] on-chain DOMAIN_SEPARATOR: 0xf71b96bf28e312f92956e7aec85346ed0a0e4ecd76f5b5d62293e82187125032
+[A1b] challenge extra for Eth Sepolia accept: {"name":"USD Coin","version":"2"}
+[A1b] separator from advertised extra: 0xf71b96bf28e312f92956e7aec85346ed0a0e4ecd76f5b5d62293e82187125032 == on-chain MATCH
+
+[A2] payload x402Version: 2
+[A2] accepted: exact eip155:11155111 0xcc194e1a843B658526D0D5C431f670028582Ae17 amount 10000 payTo 0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b
+[A2] authorization: {"from":"0x5fe684c303a4aA9d53f02f29Aa800f72C02A0DcA","to":"0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b","value":"10000","validAfter":"0","validBefore":"1795107208","nonce":"0x09600494b6338de5bf78bdef784ae4cdca1eebed12b26dac4784299beb4c33a2"}
+[A2] signature present: true len: 132
+
+[A3] recovered signer (advertised domain): 0x5fe684c303a4aA9d53f02f29Aa800f72C02A0DcA == wallet OK
+[A3] nonce already used on-chain: false
+[A4] eth_call transferWithAuthorization: SUCCESS (contract would accept this authorization)
+
+[B] wrapper paid-request status: 402
+[B] requests the wrapper made: [
+  {
+    "url": "[object Request]",
+    "hasPaymentSignature": false,
+    "paymentSignatureLen": 0,
+    "hasXPayment": false,
+    "hasPayment": false
+  },
+  {
+    "url": "[object Request]",
+    "hasPaymentSignature": false,
+    "paymentSignatureLen": 0,
+    "hasXPayment": false,
+    "hasPayment": false
+  }
+]
+[B] response headers:
+    alt-svc = h3=":443"; ma=86400
+    cf-cache-status = DYNAMIC
+    cf-ray = a5d0b9cd9cb54b60-EWR
+    connection = keep-alive
+    content-length = 1246
+    content-type = application/json
+    date = Thu, 19 Nov 2026 16:52:32 GMT
+    nel = {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+    payment-required = eyJhY2NlcHRzIjpbeyJhbW91bnQiOiIxMDAwMCIsImFzc2V0IjoiMHhjYzE5NGUxYTg0M0I2NTg1MjZEMEQ1QzQzMWY2NzAwMjg1ODJBZTE3IiwiZXh0cmEiOnsibmFtZSI6IlVTRCBDb2luIiwidmVyc2lvbiI6IjIifSwibWF4VGltZW91dFNlY29uZHMiOjYwLCJu
+    report-to = {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=W4qQTG7d4y3CdOz2R6LJbMyWh0d2ThTT86OlOqyVRWY3tuMgINJeA5xKv7XyQtm6tXwxKSZZG3We0EaQRClWhIJVJkc9uBaPP4O2Czz
+    server = cloudflare
+    vary = Origin, Origin
+[B] FULL body: {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "payTo": "G53EbeTZSNsAn7bj6iMFUQnq3zpDdEbHhKkPRywo8bix"
+    },
+    {
+      "extra": {
+        "description": "Charged to the caller's Telegraph escrow balance in the next ledger block. Fund it once with LedgerFacet.depositUSDC(amount); no per-request settlement.",
+        "message": "Telegraph Escrow Payment\n\nWallet: {from}\nPay To: 0x72a70e949362670bf8bcead24efc5b8f950aa08b\nNetwork: eip155:11155111\nAmount: 10000 uUSDC\nResource: /v1/ask\nNonce: {nonce}\nValid After: {validAfter}\nValid Before: {validBefore}",
+        "resource": "/v1/ask",
+        "signWith": "personal_sign (EIP-191)"
+      },
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670bf8bcead24efc5b8f950aa08b",
+      "price": "$0.01",
+      "scheme": "escrow"
+    }
+  ]
+}
+
+
+[C] retrying same payload with X-PAYMENT header...
+[C] X-PAYMENT retry status: 402
+    alt-svc = h3=":443"; ma=86400
+    cf-cache-status = DYNAMIC
+    cf-ray = a5d0b9d79d618cb3-EWR
+    connection = keep-alive
+    content-length = 1246
+    content-type = application/json
+    date = Thu, 19 Nov 2026 16:52:32 GMT
+    nel = {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+    payment-required = eyJhY2NlcHRzIjpbeyJhbW91bnQiOiIxMDAwMCIsImFzc2V0IjoiMHhjYzE5NGUxYTg0M0I2NTg1MjZEMEQ1QzQzMWY2NzAwMjg1ODJBZTE3IiwiZXh0cmEiOnsibmFtZSI6IlVTRCBDb2luIiwidmVyc2lvbiI6IjIifSwibWF4VGltZW91dFNlY29uZHMiOjYwLCJu
+    report-to = {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TCkbI5IHii9iKJymal5LbzJYiaV9%2Fj8Z3Q4n0cfOiEqPdVchWT7pdMIcUnCdheyAam01WgLDjCM3wcoqvhEXwo35IT4d6hsZEEhfC
+    server = cloudflare
+    vary = Origin, Origin
+[C] FULL body: {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "payTo": "G53EbeTZSNsAn7bj6iMFUQnq3zpDdEbHhKkPRywo8bix"
+    },
+    {
+      "extra": {
+        "description": "Charged to the caller's Telegraph escrow balance in the next ledger block. Fund it once with LedgerFacet.depositUSDC(amount); no per-request settlement.",
+        "message": "Telegraph Escrow Payment\n\nWallet: {from}\nPay To: 0x72a70e949362670bf8bcead24efc5b8f950aa08b\nNetwork: eip155:11155111\nAmount: 10000 uUSDC\nResource: /v1/ask\nNonce: {nonce}\nValid After: {validAfter}\nValid Before: {validBefore}",
+        "resource": "/v1/ask",
+        "signWith": "personal_sign (EIP-191)"
+      },
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670bf8bcead24efc5b8f950aa08b",
+      "price": "$0.01",
+      "scheme": "escrow"
+    }
+  ]
+}
+
+
+[D] engine route failed twice; probing the direct route...
+[D] miners listed: 44
+[D] ranked miners: #1 7375 (VerifyWire Onchain Metric Verify) GET /metric | #2 73199 (ZK Pinned Ethereum Balance) GET /metric | #3 73206 (ZK Live Pinned Ethereum Balance) GET /metric
+[D] direct unpaid quote status: 402
+[D] direct quotedAccept: {
+  amount: '10000',
+  network: 'eip155:11155111',
+  asset: '0xcc194e1a843B658526D0D5C431f670028582Ae17',
+  payTo: '0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b'
+}
+[D] direct paid-request status: 402 | requests: [{"hasPaymentSignature":false,"len":0},{"hasPaymentSignature":false,"len":0}]
+    alt-svc = h3=":443"; ma=86400
+    cf-cache-status = DYNAMIC
+    cf-ray = a5d0b9e5f8558cb3-EWR
+    connection = keep-alive
+    content-length = 1256
+    content-type = application/json
+    date = Thu, 19 Nov 2026 16:52:35 GMT
+    nel = {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+    payment-required = eyJhY2NlcHRzIjpbeyJhbW91bnQiOiIxMDAwMCIsImFzc2V0IjoiMHhjYzE5NGUxYTg0M0I2NTg1MjZEMEQ1QzQzMWY2NzAwMjg1ODJBZTE3IiwiZXh0cmEiOnsibmFtZSI6IlVTRCBDb2luIiwidmVyc2lvbiI6IjIifSwibWF4VGltZW91dFNlY29uZHMiOjYwLCJu
+    report-to = {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=g2fmIPtkqRvNWNB8NgMVYf8heR8RMfNXn4CXPqE8veCNEaQfHTMKAa7uvPERglAkhuZ2Lj8Hb40yrJv1fC9zJ0u3qM1d05ARSSH4lag
+    server = cloudflare
+    vary = Origin, Origin
+[D] FULL body: {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "payTo": "G53EbeTZSNsAn7bj6iMFUQnq3zpDdEbHhKkPRywo8bix"
+    },
+    {
+      "extra": {
+        "description": "Charged to the caller's Telegraph escrow balance in the next ledger block. Fund it once with LedgerFacet.depositUSDC(amount); no per-request settlement.",
+        "message": "Telegraph Escrow Payment\n\nWallet: {from}\nPay To: 0x72a70e949362670bf8bcead24efc5b8f950aa08b\nNetwork: eip155:11155111\nAmount: 10000 uUSDC\nResource: /v1/ask/7375\nNonce: {nonce}\nValid After: {validAfter}\nValid Before: {validBefore}",
+        "resource": "/v1/ask/7375",
+        "signWith": "personal_sign (EIP-191)"
+      },
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670bf8bcead24efc5b8f950aa08b",
+      "price": "$0.01",
+      "scheme": "escrow"
+    }
+  ]
+}
+
+
+Done.

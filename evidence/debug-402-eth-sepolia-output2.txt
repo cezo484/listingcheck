@@ -1,0 +1,76 @@
+payload for: eip155:11155111 0xcc194e1a843B658526D0D5C431f670028582Ae17 amount 10000
+
+[E1] wrapper status: 402
+[E1] requests made: [
+  {
+    "url": "https://devnode.telegraphprotocol.com/engine/v1/ask",
+    "method": "POST",
+    "hasPaymentSignature": false,
+    "paymentSignatureLen": 0,
+    "hasXPayment": false
+  },
+  {
+    "url": "https://devnode.telegraphprotocol.com/engine/v1/ask",
+    "method": "POST",
+    "hasPaymentSignature": true,
+    "paymentSignatureLen": 1124,
+    "hasXPayment": false
+  }
+]
+
+[E2] manual PAYMENT-SIGNATURE status: 402
+    payment-required = eyJhY2NlcHRzIjpbeyJhbW91bnQiOiIxMDAwMCIsImFzc2V0IjoiMHhjYzE5NGUxYTg0M0I2NTg1MjZEMEQ1QzQzMWY2NzAwMjg1ODJBZTE3IiwiZXh0cmEiOnsibmFtZSI6IlVTRCBDb2luIiwidmVyc2lvbiI6IjIifSwibWF4VGltZW91dFNlY29uZHMiOjYwLCJu
+[E2] body (first 400): {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "p
+
+[E3] both headers status: 402
+[E3] body (first 400): {
+  "error": "payment required",
+  "accepts": [
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:11155111",
+      "payTo": "0x72a70e949362670Bf8bceAd24eFC5b8f950aa08b"
+    },
+    {
+      "scheme": "exact",
+      "price": "$0.01",
+      "network": "eip155:84532",
+      "payTo": "0xC0A3FB6d3F1f4B54617d29ffbdA4663Af5F96e2e"
+    },
+    {
+      "scheme": "exact",
+      "p
+
+[E4] GET /facilitator/supported: 404 404 page not found
+
+
+[E4] GET /api/facilitator/supported: 404 404 page not found
+
+
+[E4] GET /facilitator/verify: 404 404 page not found
+
+
+[E4] POST /facilitator/verify: 404 404 page not found
+
+
+[E5] facilitator 0x97d38aa5... Sepolia ETH: 0.07151
+
+Done.
